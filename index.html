@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thai-English Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <a href="#" class="logo" id="site-logo">Company Name</a>
+                <ul class="nav-links">
+                    <li><a href="#" id="home-link">Home</a></li>
+                    <li><a href="#" id="about-link">About</a></li>
+                    <li><a href="#" id="services-link">Services</a></li>
+                    <li><a href="#" id="contact-link">Contact</a></li>
+                    <li class="switch-container">
+                        <span class="language-label">EN</span>
+                        <label class="switch">
+                            <input type="checkbox" id="language-toggle" onchange="toggleLanguage()">
+                            <span class="slider"></span>
+                        </label>
+                        <span class="language-label">TH</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Home Content (English) -->
+            <div class="content" id="content-home-en">
+                <h1>Welcome to our Website</h1>
+                <p>This is a simple language switcher between English and Thai. Our website provides various services and information to help you.</p>
+                <p>Please feel free to explore our website and learn more about what we do. We strive to provide the best experience for our users.</p>
+                <h2>Featured Services</h2>
+                <p>We offer a range of services designed to meet your needs. Check out our services page for more details.</p>
+            </div>
+
+            <!-- Home Content (Thai) -->
+            <div class="content hidden" id="content-home-th">
+                <h1>ยินดีต้อนรับสู่เว็บไซต์ของเรา</h1>
+                <p>นี่คือเมนูสลับภาษาอย่างง่ายระหว่างภาษาอังกฤษและภาษาไทย เว็บไซต์ของเรามีบริการและข้อมูลต่างๆ เพื่อช่วยเหลือคุณ</p>
+                <p>โปรดเยี่ยมชมเว็บไซต์ของเราและเรียนรู้เพิ่มเติมเกี่ยวกับสิ่งที่เราทำ เรามุ่งมั่นที่จะมอบประสบการณ์ที่ดีที่สุดให้กับผู้ใช้ของเรา</p>
+                <h2>บริการเด่น</h2>
+                <p>เรานำเสนอบริการที่หลากหลายซึ่งออกแบบมาเพื่อตอบสนองความต้องการของคุณ ดูรายละเอียดเพิ่มเติมได้ที่หน้าบริการของเรา</p>
+            </div>
+
+            <!-- About Content (English) -->
+            <div class="content hidden" id="content-about-en">
+                <h1>About Us</h1>
+                <p>We are a dedicated team of professionals committed to providing high-quality services to our clients.</p>
+                <p>Founded in 2010, our company has grown from a small start-up to a respected organization in our industry. We value innovation, integrity, and customer satisfaction above all.</p>
+                <h2>Our Mission</h2>
+                <p>To deliver exceptional services that exceed our clients' expectations while maintaining the highest standards of professionalism and ethics.</p>
+                <h2>Our Vision</h2>
+                <p>To become the leading provider in our industry, recognized for excellence, innovation, and customer care.</p>
+            </div>
+
+            <!-- About Content (Thai) -->
+            <div class="content hidden" id="content-about-th">
+                <h1>เกี่ยวกับเรา</h1>
+                <p>เราเป็นทีมมืออาชีพที่ทุ่มเทในการให้บริการคุณภาพสูงแก่ลูกค้าของเรา</p>
+                <p>ก่อตั้งขึ้นในปี 2553 บริษัทของเราได้เติบโตจากบริษัทเล็กๆ เป็นองค์กรที่ได้รับความเคารพในอุตสาหกรรมของเรา เราให้คุณค่ากับนวัตกรรม ความซื่อสัตย์ และความพึงพอใจของลูกค้าเหนือสิ่งอื่นใด</p>
+                <h2>พันธกิจของเรา</h2>
+                <p>เพื่อมอบบริการที่ยอดเยี่ยมซึ่งเกินความคาดหวังของลูกค้า ในขณะที่รักษามาตรฐานสูงสุดของความเป็นมืออาชีพและจรรยาบรรณ</p>
+                <h2>วิสัยทัศน์ของเรา</h2>
+                <p>เพื่อเป็นผู้ให้บริการชั้นนำในอุตสาหกรรมของเรา ที่ได้รับการยอมรับในด้านความเป็นเลิศ นวัตกรรม และการดูแลลูกค้า</p>
+            </div>
+
+            <!-- Services Content (English) -->
+            <div class="content hidden" id="content-services-en">
+                <h1>Our Services</h1>
+                <p>We offer a comprehensive range of services designed to meet your specific needs.</p>
+                
+                <h2>Service 1</h2>
+                <p>Our primary service focuses on providing solutions that help you achieve your goals. We use cutting-edge technology and proven methodologies to ensure optimal results.</p>
+                
+                <h2>Service 2</h2>
+                <p>Our secondary service complements our primary offering by adding additional value and features that enhance your experience with our company.</p>
+                
+                <h2>Service 3</h2>
+                <p>This specialized service addresses specific challenges that many of our clients face, providing targeted solutions and expert guidance.</p>
+                
+                <p>Contact us today to learn more about how our services can benefit you.</p>
+            </div>
+
+            <!-- Services Content (Thai) -->
+            <div class="content hidden" id="content-services-th">
+                <h1>บริการของเรา</h1>
+                <p>เรานำเสนอบริการที่ครอบคลุมซึ่งออกแบบมาเพื่อตอบสนองความต้องการเฉพาะของคุณ</p>
+                
+                <h2>บริการที่ 1</h2>
+                <p>บริการหลักของเรามุ่งเน้นไปที่การให้โซลูชันที่ช่วยให้คุณบรรลุเป้าหมาย เราใช้เทคโนโลยีล้ำสมัยและวิธีการที่พิสูจน์แล้วเพื่อให้มั่นใจในผลลัพธ์ที่ดีที่สุด</p>
+                
+                <h2>บริการที่ 2</h2>
+                <p>บริการรองของเราเสริมการนำเสนอหลักของเราโดยเพิ่มมูลค่าและคุณสมบัติเพิ่มเติมที่เพิ่มประสบการณ์ของคุณกับบริษัทของเรา</p>
+                
+                <h2>บริการที่ 3</h2>
+                <p>บริการเฉพาะทางนี้จัดการกับความท้าทายเฉพาะที่ลูกค้าหลายรายของเราเผชิญ โดยให้โซลูชันเฉพาะและคำแนะนำจากผู้เชี่ยวชาญ</p>
+                
+                <p>ติดต่อเราวันนี้เพื่อเรียนรู้เพิ่มเติมเกี่ยวกับวิธีที่บริการของเราสามารถเป็นประโยชน์กับคุณ</p>
+            </div>
+
+            <!-- Contact Content (English) -->
+            <div class="content hidden" id="content-contact-en">
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you. Get in touch with us using the information below.</p>
+                
+                <h2>Our Address</h2>
+                <p>123 Main Street<br>Bangkok, 10500<br>Thailand</p>
+                
+                <h2>Phone Number</h2>
+                <p>+66 2 123 4567</p>
+                
+                <h2>Email</h2>
+                <p>info@example.com</p>
+                
+                <h2>Business Hours</h2>
+                <p>Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday: 9:00 AM - 12:00 PM<br>Sunday: Closed</p>
+                
+                <p>Please feel free to reach out with any questions, comments, or inquiries. We aim to respond to all messages within 24 hours.</p>
+            </div>
+
+            <!-- Contact Content (Thai) -->
+            <div class="content hidden" id="content-contact-th">
+                <h1>ติดต่อเรา</h1>
+                <p>เรายินดีที่จะได้ยินจากคุณ ติดต่อเราโดยใช้ข้อมูลด้านล่าง</p>
+                
+                <h2>ที่อยู่ของเรา</h2>
+                <p>123 ถนนหลัก<br>กรุงเทพฯ, 10500<br>ประเทศไทย</p>
+                
+                <h2>หมายเลขโทรศัพท์</h2>
+                <p>+66 2 123 4567</p>
+                
+                <h2>อีเมล</h2>
+                <p>info@example.com</p>
+                
+                <h2>เวลาทำการ</h2>
+                <p>วันจันทร์ - วันศุกร์: 9:00 น. - 17:00 น.<br>วันเสาร์: 9:00 น. - 12:00 น.<br>วันอาทิตย์: ปิดทำการ</p>
+                
+                <p>โปรดติดต่อเราหากมีคำถาม ความคิดเห็น หรือข้อสงสัยใดๆ เรามุ่งมั่นที่จะตอบกลับข้อความทั้งหมดภายใน 24 ชั่วโมง</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info Section -->
+                <div class="footer-section">
+                    <h3 id="footer-about">About Us</h3>
+                    <p id="footer-about-text">We are dedicated to providing exceptional services and solutions.</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon" title="Facebook">f</a>
+                        <a href="#" class="social-icon" title="Twitter">t</a>
+                        <a href="#" class="social-icon" title="Instagram">i</a>
+                        <a href="#" class="social-icon" title="LinkedIn">in</a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div class="footer-section">
+                    <h3 id="footer-links">Quick Links</h3>
+                    <ul>
+                        <li><a href="#" id="footer-home-link">Home</a></li>
+                        <li><a href="#" id="footer-about-link">About</a></li>
+                        <li><a href="#" id="footer-services-link">Services</a></li>
+                        <li><a href="#" id="footer-contact-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="footer-section">
+                    <h3 id="footer-contact">Contact</h3>
+                    <p id="footer-address">123 Main Street, Bangkok</p>
+                    <p id="footer-phone">+66 2 123 4567</p>
+                    <p id="footer-email">info@example.com</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p id="footer-copyright">&copy; 2025 Company Name. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
